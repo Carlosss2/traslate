@@ -1,0 +1,9 @@
+AQUI VAN LAS IMAGENES O GIFS DEL ALFABETO DACTILOLOGICO
+
+Los nombres deben coincidir con los del diccionario. Ejemplos:
+  letra_a.gif
+  letra_b.gif
+  letra_c.gif
+
+Formatos recomendados: GIF animado, PNG o JPG.
+Si no existe la imagen, el programa muestra la letra en grande.

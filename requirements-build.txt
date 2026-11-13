@@ -1,0 +1,6 @@
+# Dependencias mínimas para el ejecutable (main.py).
+# Las demás librerías de requirements.txt no se usan en la aplicación.
+PyQt6>=6.6.0
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.13
+pyinstaller>=6.6.0

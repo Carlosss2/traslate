@@ -1,0 +1,65 @@
+TRADUCTOR VOZ A LENGUA DE SEÑAS CHIAPANECA / LSM
+Version para Windows
+=====================================================
+
+COMO ABRIRLO
+------------
+1. Descomprime el archivo ZIP completo.
+2. Abre la carpeta Traductor_LSM.
+3. Haz doble clic en Traductor_LSM.exe.
+
+No muevas el .exe fuera de la carpeta: necesita los archivos que estan
+junto a el (diccionario, configuracion y librerias).
+
+SI WINDOWS MUESTRA UNA ADVERTENCIA
+----------------------------------
+El ejecutable no tiene firma digital. Windows puede mostrar "Windows
+protegio tu PC" o SmartScreen. Para continuar:
+  - Haz clic en "Mas informacion".
+  - Elige "Ejecutar de todas formas".
+
+Esto es normal en programas nuevos sin certificado de firma. Si vas a
+distribuirlo en muchas computadoras, conviene firmarlo con un certificado
+de firma de codigo.
+
+MICROFONO
+---------
+1. Conecta el microfono antes de abrir el programa.
+2. La primera vez, Windows pedira permiso para usar el microfono.
+3. Si no aparece, revisa:
+   Configuracion > Privacidad y seguridad > Microfono.
+4. El reconocimiento de voz usa Google, por lo que necesita internet.
+
+SIN MICROFONO O SIN INTERNET
+----------------------------
+Puedes escribir la frase en el campo "Escribe una frase..." y presionar
+"Traducir". El diccionario funciona sin conexion.
+
+IMAGENES O GIFS DE SEÑAS
+------------------------
+Coloca los archivos dentro de la carpeta data\señas o data\alfabeto.
+Los nombres deben coincidir con los del diccionario, por ejemplo:
+  hola.gif
+  gracias.gif
+  letra_a.gif
+
+Si no hay imagen, el programa muestra la descripcion de la seña.
+
+MODO PROYECTOR
+--------------
+- F11: entrar o salir del modo proyector.
+- Esc: salir del modo proyector.
+- Espacio: reproducir o pausar.
+- Flechas izquierda/derecha: seña anterior/siguiente.
+- Ctrl+L: limpiar la pantalla.
+- A- / A+: reducir o aumentar el tamaño de las letras.
+
+USO RECOMENDADO EN EL SALON
+---------------------------
+1. Conecta la laptop al proyector.
+2. Abre el programa y presiona F11.
+3. Habla o escribe la frase.
+4. Ajusta el tamaño de letra con A- / A+ segun la distancia.
+
+Proyecto CECYT - Inclusion y accesibilidad para la comunidad sorda
+de Chiapas.

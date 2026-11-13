@@ -1,0 +1,10 @@
+AQUI VAN LAS IMAGENES O GIFS DE LAS SEÑAS
+
+Los nombres deben coincidir con los del diccionario. Ejemplos:
+  hola.gif
+  gracias.gif
+  por_favor.gif
+  buenos_dias.gif
+
+Formatos recomendados: GIF animado, PNG o JPG.
+Si no existe la imagen, el programa muestra la descripcion de la seña.

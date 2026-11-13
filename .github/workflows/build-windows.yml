@@ -1,0 +1,46 @@
+name: Compilar ejecutable de Windows
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build-windows:
+    name: Traductor LSM para Windows
+    runs-on: windows-latest
+
+    steps:
+      - name: Descargar el codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-build.txt
+
+      - name: Generar ejecutable
+        run: python -m PyInstaller --noconfirm --clean traductor.spec
+
+      - name: Empaquetar y calcular SHA256
+        shell: pwsh
+        run: |
+          Compress-Archive -Path "dist/Traductor_LSM/*" -DestinationPath "dist/Traductor_LSM_windows.zip" -Force
+          $hash = (Get-FileHash -LiteralPath "dist/Traductor_LSM_windows.zip" -Algorithm SHA256).Hash
+          "$hash  Traductor_LSM_windows.zip" | Out-File -FilePath "dist/Traductor_LSM_windows.zip.sha256" -Encoding ascii
+
+      - name: Publicar resultado
+        uses: actions/upload-artifact@v4
+        with:
+          name: Traductor_LSM_windows
+          path: |
+            dist/Traductor_LSM_windows.zip
+            dist/Traductor_LSM_windows.zip.sha256
+          if-no-files-found: error
